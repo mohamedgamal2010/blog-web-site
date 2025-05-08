@@ -1,0 +1,119 @@
+@import url('blogs.css');
+@import url('home.css');
+@import url('blog_paragraph.css');
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(255, 254, 254);
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 65px;
+    color: white;
+}
+h2 {
+    font-size: 50px;
+    color: rgb(68, 63, 63);
+}
+h3 {
+    text-align: center;
+    font-size: 40px;
+    color: green;
+}
+hr {
+    color: rgb(150, 150, 150);
+    width: 99%;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 15px 0px;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    transition: color 0.3s;
+}
+.nav a:hover {
+    background-color: black;
+    color: gray;
+}
+.nav.scrolled {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+.custom-link {
+    color: #27db82; 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out;
+}
+.custom-link:hover {
+    color: #1fb56c; 
+}
+.custom-link::after {
+    content: " >"; 
+    margin-left: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+.custom-link:hover::after {
+    transform: translateX(5px);
+}
+.footer {
+    background: linear-gradient(135deg, #1e1e1e, #333);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.facebook { background: #3b5998; }
+.twitter { background: #1da1f2; }
+.instagram { background: #e4405f; }
+.linkedin { background: #0077b5; }
+
+.icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}

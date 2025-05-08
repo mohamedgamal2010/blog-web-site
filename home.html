@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>home</title>
+</head>
+<body>
+    <header>
+        <div class="nav" id="nav">
+            <a href="#">home</a>
+            <a href="#">about us</a>
+            <a href="blogs/blogs.html">blogs</a>
+            <a href="#">contact us</a>
+        </div>
+    </header>
+    <main>
+        <div class="contanier">
+            <div class="stars"></div>
+            <h1>MG News</h1>
+            <h3>blogs website</h3>
+        </div>
+        <div class="frame">
+            <div class="paragraph">
+                <h2>about us</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Unde, praesentium recusandae. Rerum, voluptatibus quaerat. 
+                    Rerum repudiandae similique harum maxime, 
+                    ipsam aperiam porro cumque laudantium sapiente expedita obcaecati culpa laborum dolorem impedit facere repellat in illum ex necessitatibus praesentium. 
+                    Magnam consequuntur unde quo libero. Nesciunt obcaecati possimus laboriosam ipsam blanditiis dolore reprehenderit provident voluptatem unde, iusto earum mollitia placeat voluptatum eos, illum porro explicabo voluptates totam consequuntur, 
+                    tempore inventore autem fugiat est suscipit? Reprehenderit ad autem debitis, tempore inventore maiores nam!
+                </p>
+            </div>
+            <div class="photo">
+                <img src="assets/images/download.png" alt="photo">
+            </div>
+        </div>
+        <div class="kinds">
+            <h3>kinds of our news</h3>
+            <div class="collect_the_kinds">
+                <div class="element">
+                    <h3>sports News</h3>
+                    <p>
+                        We follow sports news step by step as we publish news of 
+                        all sports games and international competitions.
+                    </p>
+                    <a href="blogs/blogs.html" class="custom-link" target="_blank">Learn more</a>
+                </div>
+                <div class="element">
+                    <h3>international News</h3>
+                    <p>
+                        We follow global news, political and international conferences, 
+                        and the economic conditions of countries. 
+                        Our bulletin reaches all parts of the world with complete coverage, not spreading rumors.
+                    </p>
+                    <a href="blogs/blogs.html" class="custom-link" target="_blank">Learn more</a>
+                </div>
+                <div class="element">
+                    <h3>Community News</h3>
+                    <p>
+                        Covering social news such as the achievements of some countries and the traditional cultures of global societies, 
+                        where our correspondents conduct opinion polls of all the world's inhabitants.
+                    </p>
+                    <a href="blogs/blogs.html" class="custom-link" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="paragraph">
+                <h2>why us</h2>
+                <p>
+                    Because our coverage includes the entire world of sports, political, social, economic, educational and international news, 
+                    and we are keen to publish honest news that depends on viewing only, because what people circulate may be false news and rumors, 
+                    and we are keen on the safety of society from these rumors and eliminating them in their early stages, 
+                    and our goal is to publish everything new in this big world.
+                </p>
+            </div>
+            <div class="photo">
+                <img src="assets/images/why.jpg" alt="personal photo">
+            </div>
+        </div>
+        <div class="collect_the_kinds">
+            <div class="element">
+                <div class="news_frame">
+                    <img src="assets/images/sports.jpg" alt="photo">
+                    <h2>sports news</h2>
+                    <p>to know more news about sports click Learn more</p>
+                    <a href="blogs/blogs.html" class="custom-link" target="_blank">Learn more</a>
+                </div>
+            </div>
+            <div class="element">
+                <div class="news_frame">
+                    <img src="assets/images/usa.jpg" alt="photo">
+                    <h2>international news</h2>
+                    <p>to know more news about world click Learn more</p>
+                    <a href="blogs/blogs.html" class="custom-link" target="_blank">Learn more</a>
+                </div>
+            </div>
+            <div class="element">
+                <div class="news_frame">
+                    <img src="assets/images/community.jpg" alt="photo">
+                    <h2>Community news</h2>
+                    <p>to know more news about countries tradition click Learn more</p>
+                    <a href="blogs/blogs.html" class="custom-link" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <form action="#" class="form" id="contact">
+            <h2>contact us</h2>
+            <label for="name">name</label>
+            <input type="text" placeholder="name" id="name" required>
+            <hr>
+            <label for="email">Email</label>
+            <input type="email" placeholder="email" id="email" required>
+            <hr>
+            <label for="country">country</label>
+            <select name="country" id="country">
+                <option value="Egypt">Egypt</option>
+                <option value="England">England</option>
+                <option value="USA">USA</option>
+                <option value="French">French</option>
+                <option value="Brazil">Brazil</option>
+            </select>
+            <label for="address">your messege</label>
+            <textarea name="address" id="address" required></textarea>
+            <input type="submit">
+        </form>
+    </main>
+    <footer class="footer">
+        <p>By MG News website &copy;2025</p>
+        <div class="social-icons">
+            <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function() {
+            var navbar = document.getElementById("nav");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+        const form = document.getElementById('contact');
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const newParagraph = document.createElement("p");
+            newParagraph.classList.add('messege');
+            newParagraph.textContent = "Your comment is submited";
+            
+            form.appendChild(newParagraph);
+
+            this.reset();
+        })
+    </script>
+</body>
+</html>
